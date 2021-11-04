@@ -332,8 +332,8 @@ suite, parentName, suiteRegex, includePassed = false) {
                     let title = '';
                     if (pos.fileName !== testcase._attributes.name) {
                         title = suiteName
-                            ? `${pos.fileName}.${suiteName}/${testcase._attributes.name}`
-                            : `${pos.fileName}.${testcase._attributes.name}`;
+                            ? `${suiteName}/${testcase._attributes.name}`
+                            : `${testcase._attributes.name}`;
                     }
                     else {
                         title = suiteName
