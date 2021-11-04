@@ -151,7 +151,7 @@ describe('parseFile', () => {
                 start_column: 0,
                 end_column: 0,
                 annotation_level: 'failure',
-                title: 'CalcUtilsTest.test error handling',
+                title: 'test error handling',
                 message:
                     'unexpected exception type thrown; expected:<java.lang.IllegalStateException> but was:<java.lang.IllegalArgumentException>',
                 raw_details:
@@ -164,7 +164,7 @@ describe('parseFile', () => {
                 start_column: 0,
                 end_column: 0,
                 annotation_level: 'failure',
-                title: 'CalcUtilsTest.test scale',
+                title: 'test scale',
                 message: 'Expected: <100.10>\n     but: was <100.11>',
                 raw_details:
                     'java.lang.AssertionError: \n\nExpected: <100.10>\n     but: was <100.11>\n\tat action.surefire.report.calc.CalcUtilsTest.test scale(CalcUtilsTest.kt:15)'
@@ -184,7 +184,7 @@ describe('parseFile', () => {
                 start_column: 0,
                 end_column: 0,
                 annotation_level: 'failure',
-                title: 'test_sample.test_which_fails',
+                title: 'test_which_fails',
                 message: "AssertionError: assert 'test' == 'xyz'\n  - xyz\n  + test",
                 raw_details:
                     "def test_which_fails():\n        event = { 'attr': 'test'}\n>       assert event['attr'] == 'xyz'\nE       AssertionError: assert 'test' == 'xyz'\nE         - xyz\nE         + test\n\npython/test_sample.py:10: AssertionError"
@@ -196,7 +196,7 @@ describe('parseFile', () => {
                 start_column: 0,
                 end_column: 0,
                 annotation_level: 'failure',
-                title: 'test_sample.test_with_error',
+                title: 'test_with_error',
                 message: "AttributeError: 'dict' object has no attribute 'attr'",
                 raw_details:
                     "def test_with_error():\n        event = { 'attr': 'test'}\n>       assert event.attr == 'test'\nE       AttributeError: 'dict' object has no attribute 'attr'\n\npython/test_sample.py:14: AttributeError"
@@ -227,7 +227,7 @@ describe('parseFile', () => {
                 "raw_details": "",
                 "start_column": 0,
                 "start_line": 1,
-                "title": "DummyTest3.test_01",
+                "title": "test_01",
             }
         ]);
     });
@@ -247,7 +247,7 @@ describe('parseFile', () => {
                 "raw_details": "java.io.FileNotFoundException: No content provider: content://com.xyz/photo.jpg\nat android.content.ContentResolver.openTypedAssetFileDescriptor(ContentResolver.java:1969)\nat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)",
                 "start_column": 0,
                 "start_line": 1,
-                "title": "DummyUtilTest.test_01_dummy",
+                "title": "test_01_dummy",
             },
         ]);
     });
@@ -412,7 +412,7 @@ action.surefire.report.email.InvalidEmailAddressException: Invalid email address
             "start_column": 0,
             "end_column": 0,
             "annotation_level": "notice",
-            "title": "/path/test/config.js.default config/Config files default config projectUTCOffset should be a callable with current UTC offset",
+            "title": "default config/Config files default config projectUTCOffset should be a callable with current UTC offset",
             "message": "Config files default config projectUTCOffset should be a callable with current UTC offset",
             "raw_details": ""
         }]);
